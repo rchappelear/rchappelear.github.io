@@ -1,0 +1,19 @@
+<div class="logo">
+  Logo here
+</div>
+<div class="row">
+  <div class="twelve columns">
+    <ul class="nav">
+      <li><a href="/">Home</a></li>
+      <li>
+        <a href="#">Projects</a>
+        <ul>
+          {% for page in site.projects %}
+            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
+      <li><a href="#">About (Bio)</a></li>
+    </ul>
+  </div>
+</div>

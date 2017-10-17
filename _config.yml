@@ -4,4 +4,11 @@ description: >
   This will be the meta description indexed by Google
 baseurl: ""
 url: "http://localhost:4000"
-include: ['_pages']
+collections:
+  projects:
+    output: true
+defaults:
+  - scope:
+      path: "images"
+    values:
+      image: true

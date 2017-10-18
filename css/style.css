@@ -21,3 +21,8 @@ li a {
 li a:hover {
   color: #777777;
 }
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}

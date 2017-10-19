@@ -12,6 +12,7 @@
     <link rel="icon" type="image/png" href="/images/favicon.png">
   </head>
   <body>
+    {% include logo.html %}
     <div class="wrapper">
       <div class="row">
         <div class="two columns">
@@ -22,16 +23,49 @@
         </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
         var slider = $("#slides").slick({
-          speed: 300,
+          speed: 250,
           fade: true,
           arrows: false,
           lazyLoad: 'progressive'
         })
+
+        // Calculate mouse offset and change mouse cursor
+        $(".slick-slide").on("mousemove", function(e) {
+          // Get the width of the element
+          var pWidth = $(this).innerWidth()
+          var pOffset = $(this).offset()
+          var x = e.pageX - pOffset.left
+          // Left side
+          if (pWidth/2 > x) {
+            $(this).css({cursor: 'nw-resize'})
+          }
+          // Right side
+          else {
+            $(this).css({cursor: 'ne-resize'})
+          }
+        })
+
+        // Calculate click offset and go to next or previous
+        $(".slick-slide").click(function(e) {
+          // Get the width of the element
+          var pWidth = $(this).innerWidth()
+          var pOffset = $(this).offset()
+          var x = e.pageX - pOffset.left
+          // Left side
+          if (pWidth/2 > x) {
+            slider.slick("slickPrev")
+          }
+          // Right side
+          else {
+            slider.slick("slickNext")
+          }
+        })
+
       })
     </script>
   </body>

@@ -5,14 +5,13 @@ folder: current
 ---
 <div class="row">
   <div class="twelve columns">
-    <h4>Basic Page</h4>
-    <ul class="bxslider">
+    <div id="slides">
       {% assign image_files = site.static_files | where: "image", true %}
       {% for image in image_files %}
         {% if image.path contains page.folder %}
-          <li><img src="{{ image.path }}" style="max-width: 100%; height: auto;" /></li>
+          <div><img src="{{ image.path }}" style="max-width: 100%; height: auto;" /></div>
         {% endif %}
       {% endfor %}
-    </ul>
+    </div>
   </div>
 </div>

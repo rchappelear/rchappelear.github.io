@@ -33,3 +33,8 @@ li a:hover {
   width: 80%;
   height: auto;
 }
+
+.aboutLink {
+  text-decoration: none;
+  font-style: italic;
+}

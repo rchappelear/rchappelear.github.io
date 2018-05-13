@@ -37,7 +37,7 @@ li a:hover {
 .aboutLink {
   text-decoration: none;
   color: #aaaaaa;
-  font-size: 14px;
+  font-size: 13.5px;
 }
 
 .aboutLink:hover {
@@ -48,4 +48,31 @@ li a:hover {
   margin-top: 15%;
   font-size: 18px;
   text-indent: 50px;
+}
+
+.menuLinks {
+  margin-top: -3.5%; 
+}
+
+.menuLinks li {
+  margin-bottom: 0;
+  font-size: 13.5px;
+}
+
+.linksContainer {
+  margin-top: -2%;
+}
+
+.logoText {
+  color: #565656;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.pageContainer {
+  margin-top: 2%;
+}
+
+.galleryContainer {
+  margin-top: 1.75%;
 }

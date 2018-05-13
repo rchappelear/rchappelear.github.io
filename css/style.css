@@ -76,3 +76,11 @@ li a:hover {
 .galleryContainer {
   margin-top: 1.75%;
 }
+
+.contactText {
+  margin-top: 6%;
+}
+
+.contactText p {
+  font-size: 14px;
+}

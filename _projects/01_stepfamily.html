@@ -9,7 +9,11 @@ folder: stepfamily
       {% assign image_files = site.static_files | where: "image", true %}
       {% for image in image_files %}
         {% if image.path contains page.folder %}
-          <div><img src="{{ image.path }}" style="max-width: 100%; height: auto;" /></div>
+          {% if image.path contains "Forgiveness" %}
+            <div><img src="{{ image.path }}" style="max-width: 43%; height: auto;" /></div>
+          {% else %}
+            <div><img src="{{ image.path }}" style="max-width: 100%; height: auto;" /></div>
+          {% endif %}
         {% endif %}
       {% endfor %}
           <div class="workDescription">

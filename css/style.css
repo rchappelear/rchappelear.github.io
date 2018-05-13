@@ -29,11 +29,6 @@ li a:hover {
   margin-top: 1%;
 }
 
-.logo img {
-  width: 75%;
-  height: auto;
-}
-
 .aboutLink {
   text-decoration: none;
   color: #aaaaaa;
@@ -64,9 +59,9 @@ li a:hover {
 }
 
 .logoText {
-  color: #565656;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 21px;
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 500;
 }
 
 .pageContainer {

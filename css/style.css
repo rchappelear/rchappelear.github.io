@@ -38,3 +38,9 @@ li a:hover {
   text-decoration: none;
   font-style: italic;
 }
+
+.workDescription {
+  margin-top: 15%;
+  font-size: 18px;
+  text-indent: 50px;
+}

@@ -36,7 +36,12 @@ li a:hover {
 
 .aboutLink {
   text-decoration: none;
-  font-style: italic;
+  color: #aaaaaa;
+  font-size: 14px;
+}
+
+.aboutLink:hover {
+  color: #777777;
 }
 
 .workDescription {

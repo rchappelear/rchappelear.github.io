@@ -1,9 +1,9 @@
 <div class="row">
   <div class="twelve columns linksContainer">
-    <p class="logoText">Rebecca Chappelear</p>
+    {% include logo.html %}
     <ul class="nav menuLinks">
       {% for node in site.projects %}
-        {% if page.url == node.url %}
+        {% if node.url contains page.folder %}
           <li><a href="{{ node.url }}" class="activeLink">{{ node.title }}</a></li>
         {% else %}
           <li><a href="{{ node.url }}">{{ node.title }}</a></li>

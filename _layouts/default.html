@@ -44,11 +44,11 @@
           var x = e.pageX - pOffset.left
           // Left side
           if (pWidth/2 > x) {
-            $(this).css({cursor: 'nw-resize'})
+            $(this).css( 'cursor', 'url(/images/chevron-left-50.png), auto' );
           }
           // Right side
           else {
-            $(this).css({cursor: 'ne-resize'})
+            $(this).css( 'cursor', 'url(/images/chevron-right-50.png), auto' );
           }
         })
 

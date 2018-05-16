@@ -10,7 +10,7 @@ folder: stepfamily
       {% for image in image_files %}
         {% if image.path contains page.folder %}
           {% if image.path contains "Forgiveness" %}
-            <div><img src="{{ image.path }}" style="max-width: 43%; height: auto;" /></div>
+            <div><img src="{{ image.path }}" style="max-width: 43%; height: auto; margin-left: 25%" /></div>
           {% else %}
             <div><img src="{{ image.path }}" style="max-width: 100%; height: auto;" /></div>
           {% endif %}

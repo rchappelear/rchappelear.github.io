@@ -1,17 +1,25 @@
 ---
 layout: default
-title: Current
-folder: current
+title: Stepfamily
+folder: stepfamily
 ---
 <div class="row">
-  <div class="twelve columns">
+  <div class="eleven columns">
     <div id="slides">
       {% assign image_files = site.static_files | where: "image", true %}
       {% for image in image_files %}
         {% if image.path contains page.folder %}
-          <div><img src="{{ image.path }}" style="max-width: 100%; height: auto;" /></div>
+          {% if image.path contains "Forgiveness" %}
+            <div><img src="{{ image.path }}" style="max-width: 43%; height: auto; margin-left: 25%" /></div>
+          {% else %}
+            <div><img src="{{ image.path }}" style="max-width: 100%; height: auto;" /></div>
+          {% endif %}
         {% endif %}
       {% endfor %}
+          <div class="workDescription">
+            <p>My work explores the evidence that contributed to my family’s dysfunction and ultimately its collapse, brought on by my stepfather’s own separate trauma and depression—complications that had been ingrained into his personality long before we entered his life. My images are constructions based on the events that took place during the period that he and my mother were married, in which time I had gone from my mid-teens to my early twenties, and my sister from kindergarten into eighth grade. A photographic narrative allows me to select the memories that are crucial to my and my audience’s understanding of the events that took place—moments that have no photographic record, as a family reserves the taking of pictures for occasions meant to be remembered and looked back upon. With the creation of these photographs, I am able to investigate my experience with a man whose role as my father deteriorated as he was engulfed by his alcoholism and depression.</p>
+            <p>Each photograph in this body of work is an interpretation of the journey my family and I endured while attempting to share a life with my former stepfather, Sean—validating our previously untold experience. Scenes such as that of a child’s scooter, an empty dust-covered table, evidence of an isolated man, are an attempt to portray an environment of unrelenting struggle and confrontation.</p>
+          </div>
     </div>
   </div>
 </div>

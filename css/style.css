@@ -12,16 +12,16 @@
 .nav li {
   list-style-type: none;
   font-size: 16px;
-  color: #a0a0a0
+  color: #909090;
 }
 
 li a {
   text-decoration: none;
-  color: #a0a0a0;
+  color: #909090;
 }
 
 li a:hover {
-  color: #707070;
+  color: #5b5b5b;
 }
 
 .logo {
@@ -31,16 +31,16 @@ li a:hover {
 
 .aboutLink {
   text-decoration: none;
-  color: #a0a0a0;
+  color: #909090;
   font-size: 13.5px;
 }
 
 .aboutLink:hover {
-  color: #707070;
+  color: #5b5b5b;
 }
 
 .activeLink {
-  color: #707070;
+  color: #5b5b5b;
 }
 
 .workDescription {
@@ -66,6 +66,12 @@ li a:hover {
   font-size: 21px;
   font-family: 'Gothic A1', sans-serif;
   font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logoText:hover {
+  color: inherit;
 }
 
 .pageContainer {

@@ -1,11 +1,13 @@
 title: Rebecca Chappelear
-email: rebecca.chappelear@gmail.com
+email: rebecca@rebeccachappelear.com
 description: >
   This will be the meta description indexed by Google
 baseurl: ""
 url: "http://localhost:4000"
 collections:
   projects:
+    output: true
+  other:
     output: true
 defaults:
   - scope:

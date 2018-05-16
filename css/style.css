@@ -12,16 +12,16 @@
 .nav li {
   list-style-type: none;
   font-size: 16px;
-  color: #aaaaaa
+  color: #a0a0a0
 }
 
 li a {
   text-decoration: none;
-  color: #aaaaaa;
+  color: #a0a0a0;
 }
 
 li a:hover {
-  color: #777777;
+  color: #707070;
 }
 
 .logo {
@@ -31,12 +31,16 @@ li a:hover {
 
 .aboutLink {
   text-decoration: none;
-  color: #aaaaaa;
+  color: #a0a0a0;
   font-size: 13.5px;
 }
 
 .aboutLink:hover {
-  color: #777777;
+  color: #707070;
+}
+
+.activeLink {
+  color: #707070;
 }
 
 .workDescription {

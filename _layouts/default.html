@@ -37,7 +37,7 @@
         })
 
         // Calculate mouse offset and change mouse cursor
-        $(".slick-slide").on("mousemove", function(e) {
+        $(".galleryContainer").on("mousemove", function(e) {
           // Get the width of the element
           var pWidth = $(this).innerWidth()
           var pOffset = $(this).offset()
@@ -53,7 +53,7 @@
         })
 
         // Calculate click offset and go to next or previous
-        $(".slick-slide").click(function(e) {
+        $(".galleryContainer").click(function(e) {
           // Get the width of the element
           var pWidth = $(this).innerWidth()
           var pOffset = $(this).offset()

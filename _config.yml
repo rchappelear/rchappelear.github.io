@@ -1,0 +1,17 @@
+title: Rebecca Chappelear
+email: rebecca@rebeccachappelear.com
+version: 1.0.0
+description: >
+  This will be the meta description indexed by Google
+baseurl: ""
+url: "http://localhost:4000"
+collections:
+  projects:
+    output: true
+  other:
+    output: true
+defaults:
+  - scope:
+      path: "images"
+    values:
+      image: true

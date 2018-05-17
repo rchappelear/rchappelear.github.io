@@ -1,0 +1,20 @@
+---
+layout: default
+title: Places
+folder: places
+---
+<div class="row galleryContainer">
+  <div class="eleven columns">
+    <div id="slides">
+      {% assign image_files = site.static_files | where: "image", true %}
+      {% for image in image_files %}
+        {% if image.path contains page.folder %}
+          <div><img src="{{ image.path }}" style="max-width: 100%; height: auto;" /></div>
+        {% endif %}
+      {% endfor %}
+          <div class="workDescription">
+            <p>The documentation of my surroundings is an act which has been dear to me ever since I was first introduced to travel at a young age. This ever-evolving series of work encapsulates not a place itself, as each given location already has its own archive of photographic evidence, but a cropped point of view of my own interpretation of each moment.</p>
+          </div>
+    </div>
+  </div>
+</div>

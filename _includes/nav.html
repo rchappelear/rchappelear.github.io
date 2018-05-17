@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="twelve columns linksContainer">
+    {% include logo.html %}
+    <ul class="nav menuLinks">
+      {% for node in site.projects %}
+        {% if node.url contains page.folder %}
+          <li><a href="{{ node.url }}" class="activeLink">{{ node.title }}</a></li>
+        {% else %}
+          <li><a href="{{ node.url }}">{{ node.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+      <div style="margin-top: 5%;"></div>
+      {% for node in site.other %}
+        {% if page.url == node.url %}
+          <li><a href="{{ node.url }}" class="activeLink">{{ node.title }}</a></li>
+        {% else %}
+          <li><a href="{{ node.url }}">{{ node.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+      <li><a href="https://www.instagram.com/rebeccachapp/" target="_blank">Instagram</a></li>
+    </ul>
+  </div>
+</div>

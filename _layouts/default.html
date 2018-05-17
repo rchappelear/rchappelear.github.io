@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/normalize.css"/>
+    <link rel="stylesheet" href="/css/skeleton.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="icon" type="image/png" href="/images/favicon.png"/>
+  </head>
+  <body>
+    <div class="wrapper pageContainer">
+      <div class="row">
+        <div class="two columns">
+          {% include nav.html %}
+        </div>
+        <div class="nine columns">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var slider = $("#slides").slick({
+          speed: 250,
+          fade: true,
+          arrows: false,
+          lazyLoad: 'progressive',
+          dots: true,
+        })
+
+        // Calculate mouse offset and change mouse cursor
+        $(".galleryContainer").on("mousemove", function(e) {
+          // Get the width of the element
+          var pWidth = $(this).width()
+          var pOffset = $(this).offset()
+          var x = e.pageX - pOffset.left
+          // Left side
+          if (pWidth/2 > x) {
+            $(this).css( 'cursor', 'url(/images/chevron-left-35.png), auto' );
+          }
+          // Right side
+          else {
+            $(this).css( 'cursor', 'url(/images/chevron-right-35.png), auto' );
+          }
+        })
+
+        // Calculate click offset and go to next or previous
+        $(".galleryContainer").click(function(e) {
+          // Get the width of the element
+          var pWidth = $(this).width()
+          var pOffset = $(this).offset()
+          var x = e.pageX - pOffset.left
+          // Left side
+          if (pWidth/2 > x) {
+            slider.slick("slickPrev")
+          }
+          // Right side
+          else {
+            slider.slick("slickNext")
+          }
+        })
+
+        // Handle arrow keys
+        $(document).keydown(function(e) {
+          switch(e.which) {
+            case 37: // Left arrow
+              slider.slick("slickPrev")
+              break
+
+            case 39: // Right arrow
+              slider.slick("slickNext")
+              break
+
+            default: return
+          }
+          e.preventDefault() // Don't scroll
+        })
+
+      })
+    </script>
+  </body>
+</html>

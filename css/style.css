@@ -1,0 +1,100 @@
+.wrapper {
+  padding: 3%;
+  padding-top: 1%;
+  padding-left: 2%;
+}
+
+.nav {
+  margin-top: 15%;
+  list-style-type: none;
+}
+
+.nav li {
+  list-style-type: none;
+  font-size: 16px;
+  color: #909090;
+}
+
+li a {
+  text-decoration: none;
+  color: #909090;
+}
+
+li a:hover {
+  color: #5b5b5b;
+}
+
+.logo {
+  margin-left: -2.5%;
+  margin-bottom: 13%;
+  margin-top: 4%;
+  max-width: 105%; 
+  height: auto;
+}
+
+.aboutLink {
+  text-decoration: none;
+  color: #909090;
+  font-size: 13.5px;
+}
+
+.aboutLink:hover {
+  color: #5b5b5b;
+}
+
+.activeLink {
+  color: #5b5b5b;
+}
+
+.workDescription {
+  margin-top: 15%;
+  font-size: 18px;
+  text-indent: 50px;
+}
+
+.menuLinks {
+  margin-top: -3.5%; 
+}
+
+.menuLinks li {
+  margin-bottom: 0;
+  font-size: 13.5px;
+}
+
+.linksContainer {
+  margin-top: -2%;
+}
+
+/*
+.logoText {
+  font-size: 21px;
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logoText:hover {
+  color: inherit;
+}
+*/
+
+.pageContainer {
+  margin-top: 2%;
+}
+
+.galleryContainer {
+  margin-top: 1.75%;
+}
+
+.contactText {
+  margin-top: 6%;
+}
+
+.contactText p {
+  font-size: 14px;
+}
+
+.slick-dots li button::before {
+  font-size: 4px;
+}

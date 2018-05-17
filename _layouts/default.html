@@ -39,7 +39,7 @@
         // Calculate mouse offset and change mouse cursor
         $(".galleryContainer").on("mousemove", function(e) {
           // Get the width of the element
-          var pWidth = $(this).innerWidth()
+          var pWidth = $(this).width()
           var pOffset = $(this).offset()
           var x = e.pageX - pOffset.left
           // Left side
@@ -55,7 +55,7 @@
         // Calculate click offset and go to next or previous
         $(".galleryContainer").click(function(e) {
           // Get the width of the element
-          var pWidth = $(this).innerWidth()
+          var pWidth = $(this).width()
           var pOffset = $(this).offset()
           var x = e.pageX - pOffset.left
           // Left side
